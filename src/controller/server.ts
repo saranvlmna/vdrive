@@ -1,10 +1,8 @@
-import {
-  StatusCodes
-} from "http-status-codes";
+import { StatusCodes } from "http-status-codes";
 import { ServerService } from "../service/server";
 const serverService = new ServerService();
 export class ServerController {
-  constructor() { }
+  constructor() {}
 
   async heyServer(req: any, res: any) {
     try {
@@ -13,8 +11,7 @@ export class ServerController {
         response,
       });
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
-
   }
 }
